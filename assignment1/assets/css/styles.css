@@ -1,0 +1,82 @@
+.profile-wrap {
+  border-radius: 50px;
+  background: #ffffff;
+  padding: 20px;
+  max-height: 300px;
+}
+
+.profile-left {
+  box-shadow: -23px 23px 46px #d1d1d1, 23px -23px 46px #ffffff;
+}
+
+.profile-right {
+  box-shadow: 23px 23px 46px #d1d1d1, -23px -23px 46px #ffffff;
+}
+
+.profile-wrap h1,
+.profile-wrap h4 {
+  margin: 0;
+}
+
+.profile-img {
+  border-radius: 50px;
+  width: 100%;
+}
+
+.service{
+	background-color: #cccccc;
+}
+.service-grid{
+    overflow: hidden;
+    position: relative;
+    display: block;
+    box-shadow: 0 0 1px #6b6b6b, 0 1px 2px rgb(0 0 0 / 24%);
+}
+.service-grid:hover .service-caption{
+	opacity: 1;
+}
+.service-info{
+	overflow: hidden;
+	padding: 6em 0;
+    background: #fff;
+    text-align: center;
+}
+.service-info i.fas{
+	font-size: 3em;
+}
+.service-info h4{
+	font-size: 1.2em;
+	margin: 1em 0 0;
+}
+.service-border{
+	width: 30%;
+    margin: 1em auto 0;
+    border: solid 1px #09d5b0;
+}
+.service-caption{
+	position: absolute;
+	padding: 6em 1em;
+	height: 100%;
+	width: 100%;
+	top:0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: .2s ease;
+	background-color: #09d5b0;
+}
+.service-caption h4{
+	color: #fff;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin: 0;
+}
+.service-caption p{
+	font-size: .9em;
+    margin-top: 1em;
+    color: #fff;
+    line-height: 1.8em;
+}
