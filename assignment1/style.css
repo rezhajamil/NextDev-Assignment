@@ -22,38 +22,34 @@
   border-radius: 50px;
   width: 100%;
 }
-
-.service{
-	background-color: #cccccc;
-}
-.service-grid{
+.info-grid{
     overflow: hidden;
     position: relative;
     display: block;
     box-shadow: 0 0 1px #6b6b6b, 0 1px 2px rgb(0 0 0 / 24%);
 }
-.service-grid:hover .service-caption{
+.info-grid:hover .info-caption{
 	opacity: 1;
 }
-.service-info{
+.info-detail{
 	overflow: hidden;
 	padding: 6em 0;
     background: #fff;
     text-align: center;
 }
-.service-info i.fas{
+.info-detail i.fas{
 	font-size: 3em;
 }
-.service-info h4{
+.info-detail h4{
 	font-size: 1.2em;
 	margin: 1em 0 0;
 }
-.service-border{
+.info-border{
 	width: 30%;
     margin: 1em auto 0;
     border: solid 1px #09d5b0;
 }
-.service-caption{
+.info-caption{
 	position: absolute;
 	padding: 6em 1em;
 	height: 100%;
@@ -66,7 +62,7 @@
 	transition: .2s ease;
 	background-color: #09d5b0;
 }
-.service-caption h4{
+.info-caption h4{
 	color: #fff;
     font-size: 1em;
     text-transform: uppercase;
@@ -74,7 +70,7 @@
     letter-spacing: 4px;
     margin: 0;
 }
-.service-caption p{
+.info-caption p{
 	font-size: .9em;
     margin-top: 1em;
     color: #fff;

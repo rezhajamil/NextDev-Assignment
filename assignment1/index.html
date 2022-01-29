@@ -1,602 +1,111 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Assignment 1|NextDev</title>
-
-	<script src="https://kit.fontawesome.com/b2ba1193ce.js" crossorigin="anonymous"></script>
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/style.css">	
-	<link rel="stylesheet" href="assets/css/theme.css">	
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg bg-darkblue">
-		<a href="#" class="navbar-brand text-white">Corp Plan</a>
-		<button class="navbar-toggler bg-lightgreen me-3" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
-			<!-- <span class="navbar-toggler-icon text-white"></span> -->
-			<i class="fas fa-bars text-white"></i>
-		</button>
-		<div class="collapse navbar-collapse justify-content-end me-3" id="navbarsExample02">
-			<ul class="navbar-nav ms-auto">
-				<li class="nav-item me-3 active">
-					<a href="#" class="nav-link-hover text-white">Home</a>
-				</li>
-				<li class="nav-item me-3">
-					<a href="#services" class="nav-link-hover text-white">Services</a>
-				</li>
-				<li class="nav-item me-3">
-					<a href="#news" class="nav-link-hover text-white">News</a>
-				</li>
-				<li class="nav-item me-3">
-					<a href="#contact" class="nav-link-hover text-white">Contact</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
-
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-		<ol class="carousel-indicators">
-			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-			<li data-target="#myCarousel" data-slide-to="1"></li>
-		</ol>
-		<div class="carousel-inner">
-		<div class="carousel-item active">
-			<img src="assets/images/car-1.jpg" class="d-block w-100 opacity-0 carousel-image" >
-			<div class="carousel-caption text-left d-md-block">
-				<h1 class="display-3">GROW YOUR BUSINESS</h1>
-				<h1 class="text-lightgreen display-3">WITH US</h1>
-				<h5>We Will Help You In Modern Technology</h5>
-				<button class="btn btn-lightgreen" data-toggle="modal" data-target="#mod1">Find Out More</button>
-			</div>
-		</div>
-		<div class="carousel-item">
-			<img src="assets/images/car-2.jpg" class="d-block w-100 carousel-image" >
-			<div class="carousel-caption text-left d-none d-md-block">
-				<h1 class="display-3">SHARE YOUR DREAMS</h1>
-				<h1 class="text-lightgreen display-3">WITH US</h1>
-				<h5>We Will Help You In Modern Technology</h5>
-				<button href="#ovl2" class="btn btn-lightgreen" data-toggle="modal" data-target="#mod2">Find Out More</button>
-			</div>
-		</div>
-			</div>
-		<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="sr-only">Next</span>
-		</a>
-	</div>
-
-	<div class="modal fade" id="mod1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-			<h5 class="modal-title" id="ModalTitle">CORP PLAN</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-			</div>
-			<div class="modal-body">
-			<img src="assets/images/car-1.jpg" alt="mod1" class="d-block w-100">
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, amet beatae doloremque maiores enim, sed possimus praesentium nostrum quasi cum, veritatis quo ducimus modi corporis dignissimos fugit quia iusto id iure commodi dicta delectus dolor eos? Repudiandae alias, omnis ut explicabo cumque nostrum quae aliquid tenetur nisi quos odit, dolorum.</p>
-			</div>
-			<div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			<button type="button" class="btn btn-darkblue">Save changes</button>
-			</div>
-		</div>
-		</div>
-	</div>
-
-	<div class="modal fade" id="mod2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-			<h5 class="modal-title" id="ModalTitle">CORP PLAN</h5>
-			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				<span aria-hidden="true">&times;</span>
-			</button>
-			</div>
-			<div class="modal-body">
-			<img src="assets/images/car-2.jpg" alt="mod1" class="d-block w-100">
-			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, amet beatae doloremque maiores enim, sed possimus praesentium nostrum quasi cum, veritatis quo ducimus modi corporis dignissimos fugit quia iusto id iure commodi dicta delectus dolor eos? Repudiandae alias, omnis ut explicabo cumque nostrum quae aliquid tenetur nisi quos odit, dolorum.</p>
-			</div>
-			<div class="modal-footer">
-			<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-			<button type="button" class="btn btn-darkblue">Save changes</button>
-			</div>
-		</div>
-		</div>
-	</div>
-
-	<div class="service py-5" id="services">
-		<div class="container py-md-3">
-			<div class="row mb-3">
-				<div class="col">
-					<h1 class="text-center display-4">SERVICES</h1>
-				</div>
-			</div>
-			<div class="service-grids row mb-5">
-				<div class="col-lg-4 col-sm-6 my-3">
-					<div class="service-grid">
-						<div class="service-info">
-							<i class="fas fa-briefcase" aria-hidden="true"></i>
-							<h4>BUSINESS CONSULTANT</h4>
-							<div class="service-border"></div>
-						</div>
-						<div class="service-caption">
-							<h4 class="text-center">Lorem ipsum</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat, soluta. Est provident natus, ducimus?</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 my-3">
-					<div class="service-grid">
-						<div class="service-info">
-							<i class="fas fa-industry" aria-hidden="true"></i>
-							<h4>INDUSTRY CONSULTANT</h4>
-							<div class="service-border"></div>
-						</div>
-						<div class="service-caption">
-							<h4 class="text-center">Lorem ipsum</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat, soluta. Est provident natus, ducimus?</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 my-3">
-					<div class="service-grid">
-						<div class="service-info">
-							<i class="fas fa-chart-bar" aria-hidden="true"></i>
-							<h4>BUSINESS PLANNING</h4>
-							<div class="service-border"></div>
-						</div>
-						<div class="service-caption">
-							<h4 class="text-center">Lorem ipsum</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat, soluta. Est provident natus, ducimus?</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 my-3">
-					<div class="service-grid">
-						<div class="service-info">
-							<i class="fas fa-globe" aria-hidden="true"></i>
-							<h4>ONLINE CONSULTANT</h4>
-							<div class="service-border"></div>
-						</div>
-						<div class="service-caption">
-							<h4 class="text-center">Lorem ipsum</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat, soluta. Est provident natus, ducimus?</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 my-3">
-					<div class="service-grid">
-						<div class="service-info">
-							<i class="fas fa-money-bill-alt" aria-hidden="true"></i>
-							<h4>TAX PLANNING</h4>
-							<div class="service-border"></div>
-						</div>
-						<div class="service-caption">
-							<h4 class="text-center">Lorem ipsum</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat, soluta. Est provident natus, ducimus?</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-sm-6 my-3">
-					<div class="service-grid">
-						<div class="service-info">
-							<i class="fas fa-university" aria-hidden="true"></i>
-							<h4>BANK INVESTMENT</h4>
-							<div class="service-border"></div>
-						</div>
-						<div class="service-caption">
-							<h4 class="text-center">Lorem ipsum</h4>
-							<p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas quaerat, soluta. Est provident natus, ducimus?</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<section class="team py-5">
-		<div class="container py-md-3">
-			<div class="row mb-3">
-				<div class="col">
-				<h1 class="text-center display-4">OUR TEAM</h1>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 team-grid">
-					<figure class="effect-team">
-						<image src="assets/images/team-1.jpg" class="zoom-image img-fluid"></image>
-						<div class="banner">
-							<p>STEPHEN BROWN</p>
-							<p>
-								<a href="#" class="facebook">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-								<a href="#" class="twitter">
-									<i class="fab fa-twitter"></i>
-								</a>
-								<a href="#" class="instagram">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</p>
-							<p>Director</p>
-						</div>
-					</figure>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 team-grid">
-					<figure class="effect-team">
-						<image src="assets/images/team-2.jpg" class="zoom-image img-fluid"></image>
-						<div class="banner">
-							<p>ROBERT DAWNEY</p>
-							<p>
-								<a href="#" class="facebook">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-								<a href="#" class="twitter">
-									<i class="fab fa-twitter"></i>
-								</a>
-								<a href="#" class="instagram">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</p>
-							<p>Manager</p>
-						</div>
-					</figure>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 team-grid">
-					<figure class="effect-team">
-						<image src="assets/images/team-3.jpg" class="zoom-image img-fluid"></image>
-						<div class="banner">
-							<p>ABDUL ZAYN</p>
-							<p>
-								<a href="#" class="facebook">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-								<a href="#" class="twitter">
-									<i class="fab fa-twitter"></i>
-								</a>
-								<a href="#" class="instagram">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</p>
-							<p>Planner</p>
-						</div>
-					</figure>
-				</div>
-				<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 team-grid">
-					<figure class="effect-team">
-						<image src="assets/images/team-4.jpg" class="zoom-image img-fluid"></image>
-						<div class="banner">
-							<p>ZANG QUINN</p>
-							<p>
-								<a href="#" class="facebook">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-								<a href="#" class="twitter">
-									<i class="fab fa-twitter"></i>
-								</a>
-								<a href="#" class="instagram">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</p>
-							<p>Guider</p>
-						</div>
-					</figure>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<div class="news py-5" id="news">
-		<div class="container py-md-3">
-			<div class="row mb-5">
-				<div class="col">
-					<h4 class="text-center display-4">NEWS & EVENT</h4>
-				</div>
-			</div>
-			<div class="row mb-5">
-				<div class="col-12">
-					<div class="row">
-						<div class="col-lg-3 col-md-3 col-sm-12 imgEvent">
-							<img src="assets/images/evt-1.jpg" id="imgE1" class="img-fluid shadow">
-						</div>
-						<div class="col-lg-9 col-md-9 col-xs-9 infoEvent">
-							<h5 class="text-wrap">
-								<a href="#" data-toggle="modal" data-target="#modalEvent">Cost For Craftmanship Nostrum Exercitationem</a>
-							</h5>
-							<h6>20/02/2018</h6>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Recusandae cum obcaecati, sapiente est magnam quo aliquam sed ex commodi modi, dignissimos accusamus, aut unde dolorem. Neque minima eligendi voluptas rem?</p>
-						</div>
-					</div>
-					<div class="row mt-5">
-						<div class="col-lg-3 col-md-3 col-sm-12 imgEvent">
-							<img src="assets/images/evt-2.jpg" id="imgE2" class="img-fluid shadow">
-						</div>
-						<div class="col-lg-9 col-md-9 col-xs-9 infoEvent">
-							<h5 class="text-wrap">
-								<a href="#" data-toggle="modal" data-target="#modalEvent">Accusantium Dolore Mque Laud Antium Dolore Mque</a>
-							</h5>
-							<h6>20/02/2018</h6>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Recusandae cum obcaecati, sapiente est magnam quo aliquam sed ex commodi modi, dignissimos accusamus, aut unde dolorem. Neque minima eligendi voluptas rem?</p>
-						</div>
-					</div>
-					<div class="row mt-5">
-						<div class="col-lg-3 col-md-3 col-sm-12 imgEvent">
-							<img src="assets/images/evt-3.jpg" id="imgE3" class="img-fluid shadow">
-						</div>
-						<div class="col-lg-9 col-md-9 col-xs-9 infoEvent">
-							<h5 class="text-wrap">
-								<a href="#" data-toggle="modal" data-target="#modalEvent">Financial Adds Value To Your Life Worth How To Know ?</a>
-							</h5>
-							<h6>20/02/2018</h6>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Recusandae cum obcaecati, sapiente est magnam quo aliquam sed ex commodi modi, dignissimos accusamus, aut unde dolorem. Neque minima eligendi voluptas rem?</p>
-						</div>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	<!-- Modal Event -->
-		<div class="modal fade" id="modalEvent" tabindex="-1" aria-labelledby="modalProjectLabel" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="modalProjectLabel">CORP PLAN</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<img  class="img-fluid" id="img02">
-						<p class="my-1" id="caption">Lorem ipsum dolor sit, amet consectetur adipisicing, elit. Libero aliquam qui a non nobis ducimus blanditiis aut, vel delectus vitae repudiandae ad totam earum iure inventore rem, ullam molestiae mollitia.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="stats py-5 bg-darkblue">
-		<div class="container py-md-3">
-			<div class="row">
-				<div class="col-md-3 col-sm-6 stats-grid">
-					<div class="stats-counter-grid">
-						<i class="fas fa-smile" aria-hidden="true"></i>
-					</div>
-					<p class="counter">1,956</p>
-					<h3>Happy Customer</h3>
-				</div>
-				<div class="col-md-3 col-sm-6 stats-grid">
-					<div class="stats-counter-grid">
-						<i class="fas fa-tasks" aria-hidden="true"></i>
-					</div>
-					<p class="counter">432</p>
-					<h3>Complete Project</h3>
-				</div>
-				<div class="col-md-3 col-sm-6 stats-grid">
-					<div class="stats-counter-grid">
-						<i class="fas fa-user-tie" aria-hidden="true"></i>
-					</div>
-					<p class="counter">690</p>
-					<h3>Expert Advisor</h3>
-				</div>
-				<div class="col-md-3 col-sm-6 stats-grid">
-					<div class="stats-counter-grid">
-						<i class="fas fa-award" aria-hidden="true"></i>
-					</div>
-					<p class="counter">124</p>
-					<h3>Awards Won</h3>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="client py-5">
-		<div class="container py-md-3">
-			<div class="row mb-5">
-				<div class="col">
-					<h4 class="text-center display-4 text-white">What People Say</h4>
-				</div>
-			</div>
-			<div class="row mb-5">
-				<div class="row mb-5 client-say">
-					<div class="col-md-3 py-4">
-						<img src="assets/images/client-1.jpg" class="img-fluid mr-5">
-					</div>
-					<div class="col-md-9 py-4">
-						<div class="pb-3">
-							<i class="fas fa-quote-left"></i>
-						</div>
-						<div>
-							<h3 class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora sunt velit. Quaerat obcaecati id culpa, mollitia molestias, tenetur ut laudantium deserunt soluta sit? Voluptatibus molestiae fugit, autem perspiciatis consequuntur?</h3>
-							<p class="text-darkblue">James Harden</p>
-						</div>
-					</div>
-				</div>
-				<div class="row mb-5 client-say">
-					<div class="col-md-9 py-4">
-						<div class="pb-3">
-							<i class="fas fa-quote-left"></i>
-						</div>
-						<div>
-							<h3 class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora sunt velit. Quaerat obcaecati id culpa, mollitia molestias, tenetur ut laudantium deserunt soluta sit? Voluptatibus molestiae fugit, autem perspiciatis consequuntur?</h3>
-							<p class="text-darkblue">Bob William</p>
-						</div>
-					</div>
-					<div class="col-md-3 py-4">
-						<img src="assets/images/client-2.jpg" class="img-fluid mr-5">
-					</div>
-				</div>
-				<div class="row client-say">
-					<div class="col-md-3 py-4">
-						<img src="assets/images/client-3.jpg" class="img-fluid mr-5">
-					</div>
-					<div class="col-md-9 py-4">
-						<div class="pb-3">
-							<i class="fas fa-quote-left"></i>
-						</div>
-						<div>
-							<h3 class="text-justify text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tempora sunt velit. Quaerat obcaecati id culpa, mollitia molestias, tenetur ut laudantium deserunt soluta sit? Voluptatibus molestiae fugit, autem perspiciatis consequuntur?</h3>
-							<p class="text-darkblue">Jack Thomas</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		</div>
-	</div>
-
-	<div class="contact py-5" id="contact">
-		<div class="container py-md-3">
-			<div class="row mb-5">
-				<div class="col">
-					<h4 class="text-center display-4">GET IN TOUCH</h4>
-				</div>
-			</div>
-			<div class="contact-form row">
-				<div class="col-md-6 contact-form-left">
-					<div class="contact-form-top">
-						<h3>GET IN TOUCH</h3>
-						<p class="text-justify">Pellentesque eget mi nec est tincidunt accumsan. Proin fermentum dignissim justo, vel euismod justo sodales vel. In non condimentum mauris. Maecenas condimentum interdum lacus, ac varius nisl dignissim ac. Vestibulum euismod est risus, quis convallis nisi tincidunt eget. Sed ultricies congue lacus at fringilla.</p>
-					</div>
-					<div class="contact-address">
-						<ul>
-							<li>
-								<i class="fas fa-phone" aria-hidden="true"></i>
-								<span>+628 123 4567 890</span>
-							</li>
-							<li>
-								<i class="fas fa-envelope" aria-hidden="true"></i>
-								<span>mail@example.com</span>
-							</li>
-							<li>
-								<i class="fas fa-map-marker" aria-hidden="true"></i>
-								<span>Medan Sunggal, 20</span>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 contact-form-right">
-					<div class="contact-form-top">
-						<h3>SEND US A MESSAGE</h3>
-					</div>
-					<div class="contact-form-grid">
-						<form action="#" method="post">
-							<input type="text" name="Name" placeholder="Name" class="form-control" required="">
-							<input type="email" name="Email" placeholder="Email" class="form-control" required="">
-							<input type="text" name="Telephone" placeholder="Telephone" class="form-control" required="">
-							<textarea name="Message" placeholder="Message" class="form-control mb-3" required=""></textarea>
-							<input class="btn btn-lightgreen" type="submit"></input>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="map">
-				<h3>FIND US HERE</h3>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.0526366085755!2d98.63891671422115!3d3.5753732513828926!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312fc964ce37f5%3A0xb24ed76ec3cd8c76!2sJl.%20Murni%2C%20Tj.%20Rejo%2C%20Kec.%20Medan%20Sunggal%2C%20Kota%20Medan%2C%20Sumatera%20Utara!5e0!3m2!1sid!2sid!4v1639442616377!5m2!1sid!2sid" allowfullscreen></iframe>
-			</div>
-		</div>
-	</div>
-
-	<footer class="footer mt-auto py-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-3">
-					<h5 class="mb-3">About Us</h5>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo natus asperiores reiciendis quam ratione optio minima harum repudiandae illo rem.</p>
-				</div>
-				<div class="col-md-3">
-					<h5 class="mb-3">Useful Links</h5>
-					<ul class="footer-list">
-						<li>
-							<a href="#">Call Us</a>
-						</li>
-						<li>
-							<a href="#">What We Do</a>
-						</li>
-						<li>
-							<a href="#">Projects</a>
-						</li>
-						<li>
-							<a href="#">Team Members</a>
-						</li>
-						<li>
-							<a href="#">Contact Us</a>
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h5 class="mb-3">Address</h5>
-					<ul class="footer-list">
-						<li>
-							<i class="fas fa-map-marker"></i>
-								Medan Sunggal, 20154
-						</li>
-						<li>
-							<i class="fas fa-envelope"></i>
-							<a href="#">mail@example.com</a>
-						</li>
-						<li>
-							<i class="fas fa-phone"></i>
-								+628 123 4567 890
-						</li>
-						<li>
-							<i class="fas fa-clock"></i>
-								Working Hours : 8:00 a.m - 6:00 p.m 
-						</li>
-					</ul>
-				</div>
-				<div class="col-md-3">
-					<h5 class="mb-3">Support</h5>
-					<ul class="footer-list">
-						<li>
-							<a href="#">24/7 Service</a>
-						</li>
-						<li>
-							<a href="#">FAQ's</a>
-						</li>
-						<li>
-							<a href="#">Media Queries</a>
-						</li>
-						<li>
-							<a href="#">Others</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="row pt-5 pb-0">
-				<div class="col text-center icon-sosial">
-					<a href="#" class="footer-button">
-						<i class="fab fa-facebook-f"></i>
-					</a>
-					<a href="#" class="footer-button">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a href="#" class="footer-button">
-						<i class="fab fa-dribbble"></i>
-					</a>
-					<a href="#" class="footer-button">
-						<i class="fab fa-pinterest-p"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<section class="copyright py-4">
-		<div class="text-center">
-			<p>© 2021 Corp Plan. All Rights Reserved</p>
-		</div>
-	</section>
-	<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"  integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/b2ba1193ce.js" crossorigin="anonymous"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio|Rezha</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/b2ba1193ce.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a class="navbar-brand" href="#">Rezha Jamil</a>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Information
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <h1 class="my-5 text-center">My Portofolio</h1>
+    <div class="container">
+      <section class="profile d-flex justify-content-center">
+          <div class="profile-wrap profile-left col-lg-6 col-9 d-flex">
+              <div class="profile-img-wrap col-lg-6 pe-3 d-flex">
+                  <img src="https://media-exp1.licdn.com/dms/image/C5603AQE3qqGmTiibJA/profile-displayphoto-shrink_400_400/0/1636724555037?e=1648684800&v=beta&t=c01hhP2BCx0uzneP1qqU4pdwQGe6AGYnL34tfRNtX6o" alt="Profil Rezha" class="profile-img"/>
+              </div>
+              <div class="profile-bio-wrap ms-3 col-lg-6 d-flex flex-column justify-content-center ">
+                  <p class="h3 my-3">Rezha Jamil Nasution</p>
+                  <p class="h5">Junior Programmer</p>
+                  <p class="h6 font-weight-normal mt-3">17 Juli 2001</p>
+                  <p class="h6 font-weight-normal">Medan</p>
+              </div>
+          </div>
+      </section>
+    </div>
+      
+    <div class="information py-5" id="information">
+      <div class="container py-md-3">
+        <div class="row mb-3">
+          <div class="col">
+            <p class="text-center h1">Information</p>
+          </div>
+        </div>
+        <div class="info-grids row mb-5">
+          <div class="col-lg-4 col-sm-12 my-3">
+            <div class="info-grid">
+              <div class="info-detail">
+                <i class="fas fa-briefcase" aria-hidden="true"></i>
+                <h4>PROFESSION</h4>
+                <div class="info-border"></div>
+              </div>
+              <div class="info-caption">
+                <h4 class="text-center">AZISTEN</h4>
+                <p class="text-center">Chief Technology Officer</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 my-3">
+            <div class="info-grid">
+              <div class="info-detail">
+                <i class="fas fa-user-graduate" aria-hidden="true"></i>
+                <h4>EDUCATION</h4>
+                <div class="info-border"></div>
+              </div>
+              <div class="info-caption">
+                <h4 class="text-center text-uppercase">Politeknik Negeri Medan</h4>
+                <p class="text-center">D3 Manajemen Informatika</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-12 my-3">
+            <div class="info-grid">
+              <div class="info-detail">
+                <i class="fas fa-tachometer-alt" aria-hidden="true"></i>
+                <h4>SKILL</h4>
+                <div class="info-border"></div>
+              </div>
+              <div class="info-caption">
+                <h4 class="text-center">PROGRAMMING</h4>
+                <p class="text-center">HTML, CSS, JavaScript, PHP, Kotlin</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
